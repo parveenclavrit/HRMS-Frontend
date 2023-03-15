@@ -1,0 +1,122 @@
+.wrapper {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 15px;
+    width: 100%;}
+
+    body {
+        background-color: #ccc;
+        padding: 0px;
+        margin: 0px;
+        font-family: Verdana;
+      }
+      .heirarchy {
+        text-align: right;
+        padding: 10px;
+      }
+      .employee {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+      }
+      .employee li {  
+        display: inline-block;
+        width: 40%;
+        /*background-color: #ddd;*/
+        margin-bottom: -3px;  
+      }
+      .profile {  
+        border: 1px solid gray;  
+        height: 60px;
+        border-radius: 30px;
+        /*margin: 10px 0px;*/
+        text-align: left;
+        width: 80%;
+        float: left;
+        background-color: #ddd;
+        box-shadow: 0px 2px 0px rgba(100,100,100,0.3);
+      }
+      .profile:hover {
+          background-color: #f0f0f0;
+        box-shadow: 0px 4px 6px rgba(120,120,120,0.7);
+        cursor: pointer;
+      }
+      .profile img{
+        height: 60px;
+        float: left;
+      }
+      .profile div{
+        margin: 5px 5px;  
+      }
+      .name {
+        font-weight: bold;
+      }
+      .self li{
+        margin-left: 30%;
+      }
+      .self .profile {
+        /*float: left;*/
+        background-color: white;
+        box-shadow: 0px 4px 6px rgba(100,100,100,0.6);
+      }
+      .parent li::after{
+        content: "";
+        width: 19%;
+        height: 50px;
+        margin-top: 30px;
+        display: block;
+        border-top: 1px solid #666;
+        border-right: 1px solid #666;
+        border-radius: 0px 10px;
+        float: left;
+      }
+      .child li:nth-child(even) {
+        margin-left: -6px;
+      }
+      .child li:nth-child(odd) {  
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        margin-bottom: 30px;  
+        margin-left: 5%;
+      }
+      .child li:first-child{
+        padding-top: 20px;
+      }
+      .child li:nth-child(even)::before{
+        content: "";
+        width: 19%;
+        height: 70px;
+        display: block;
+        margin-top: -40px;
+        border-bottom: 1px solid #666;
+        border-left: 1px solid #666;
+        border-radius: 0px 10px;  
+        float: left;
+      }
+      .child li:nth-child(odd):not(:first-child)::after{
+        content: "";
+        width: 19%;
+        height: 80px;
+        display: block;
+        margin-top: -50px;
+        border-bottom: 1px solid #666;
+        border-right: 1px solid #666;
+        border-radius: 10px 0px;
+        float: right;
+      }
+      .child li:first-child::before{
+          content: "";
+        width: 19%;
+        height: 50px;
+        display: block;
+        margin-top: -20px;
+        border-bottom: 1px solid #666;
+        border-right: 1px solid #666;
+        border-radius: 10px 0px;
+        float: right;
+      }
+      .child li:nth-child(even) .profile{  
+        float: right
+      }

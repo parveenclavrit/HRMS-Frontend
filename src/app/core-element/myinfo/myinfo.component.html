@@ -1,0 +1,44 @@
+<app-user-sidebar></app-user-sidebar>
+<section id="main-content">
+    <section style="background-color:#24aee4;"  class="wrapper">
+   
+
+      <head>
+          <title>My Info</title>
+
+      </head>
+      <div  style="margin-top: 43px; " class="horizontal-menu navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+
+          
+          <li  style="margin-top: 10px;"><a style="color: white;" class="btn" [routerLink]="['/MyInfo/document']" routerLinkActive="active">Document</a></li>
+          <li style="margin-top: 10px;margin-left: 10px;"><a style="color: white;" class="btn" [routerLink]="['/MyInfo/personal']" routerLinkActive="active">Personal</a></li>
+        </ul>
+      </div>
+      <body>
+        
+      
+    </body>
+    
+    
+    </section>
+    <div class="heirarchy">
+      <ul class="parent employee">
+        <li><div class="profile"><img src="https://cdn3.iconfinder.com/data/icons/internet-and-web-4/78/internt_web_technology-13-128.png"/><div class="name">Madam M</div><div>001</div></div></li>
+      </ul>
+      <div></div>
+      <ul class="self employee">
+        <li><div class="profile"><img src="https://cdn3.iconfinder.com/data/icons/internet-and-web-4/78/internt_web_technology-13-128.png"/><div class="name">James Bond</div><div>007</div></div></li>
+      </ul>
+      <div></div>
+      <ul class="child employee">
+        <li><div class="profile"><img src="https://cdn3.iconfinder.com/data/icons/internet-and-web-4/78/internt_web_technology-13-128.png"/><div class="name">Agent V</div><div>014</div></div></li>
+        <li><div class="profile"><img src="https://cdn3.iconfinder.com/data/icons/internet-and-web-4/78/internt_web_technology-13-128.png"/><div class="name">Agent K</div><div>011</div></div></li>
+        <li><div class="profile"><img src="https://cdn3.iconfinder.com/data/icons/internet-and-web-4/78/internt_web_technology-13-128.png"/><div class="name">Agent T</div><div>019</div></div></li>
+        <li><div class="profile"><img src="https://cdn3.iconfinder.com/data/icons/internet-and-web-4/78/internt_web_technology-13-128.png"/><div class="name">Agent R</div><div>017</div></div></li>
+        <li><div class="profile"><img src="https://cdn3.iconfinder.com/data/icons/internet-and-web-4/78/internt_web_technology-13-128.png"/><div class="name">Agent G</div><div>021</div></div></li>
+      </ul>
+      </div>
+  </section>
+  <router-outlet></router-outlet>
+<!-- <app-document></app-document> -->
